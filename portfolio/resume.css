@@ -72,7 +72,7 @@ body {
 }
 
 .navbar .nav-link {
-  color: white !important;
+  color: #333;
   font-size: 1rem;
   margin-left: 15px;
   transition: color 0.3s ease;
@@ -116,7 +116,7 @@ body {
 }
 
 .contact-card a:hover {
-  color: #007bff;
+  color: #6A0DAD;
   text-decoration: underline;
 }
 
@@ -172,7 +172,7 @@ ul.list-unstyled li i {
 
   /* Footer Styling */
   footer {
-    background-color: #222;
+    background-color: #0a0a23;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -253,5 +253,120 @@ ul.list-unstyled li i {
 /* Carousel controls styling */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #0d6efd;
+  background-color: #6A0DAD;
+}
+
+.text {
+  color: #6A0DAD !important;
+}
+
+/* General Section Styling */
+.strengths-section {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid Layout for Strengths */
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Individual Strength Item Styling */
+.strength-item {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  text-align: center;
+}
+
+.strength-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.icon-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+}
+
+.icon-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-container:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading and Paragraph Styling */
+.strength-item h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin: 15px 0;
+}
+
+.strength-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+#why-i-show-up i {
+  transition: transform 0.3s ease-in-out;
+}
+#why-i-show-up i:hover {
+  transform: scale(1.2);
+}
+
+#where-im-headed i {
+  transition: transform 0.3s ease-in-out;
+}
+#where-im-headed i:hover {
+  transform: scale(1.2);
+}
+
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline-item {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  border-left: 2px solid #007bff;
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
 }
