@@ -4,77 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Slide Display</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> <!-- Animate.css -->
-  <link rel="stylesheet" href="slides.css"> <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="portfolio.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- stylesheet added for new navbar -->
+  <link
+    href="https://assets-global.website-files.com/6075e869c1ce85d8a18a162a/css/danshettysite.webflow.dab29779c.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700"
+    media="all"
+  />
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg shadow">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="aashutosh.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="aashutosh.html#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item">
-            <a class="icon" href="#"><i class="bi bi-telegram"></i></a>
-            <a class="icon" href="#"><i class="bi bi-whatsapp"></i></a>
-            <a class="icon" href="#"><i class="bi bi-linkedin"></i></a>
-          </li>
-        </ul>
+  <div
+  data-collapse="medium"
+  data-animation="default"
+  data-duration="400"
+  data-easing="ease"
+  data-easing2="ease"
+  role="banner"
+  class="navbar w-nav"
+>
+  <div class="navigation-container">
+    <div class="navigation-left">
+      <a href="/" class="brand w-nav-brand" aria-label="home"
+        ><img
+          src="https://cdn.prod.website-files.com/6075e869c1ce85d8a18a162a/6099cb2edd4914ce5fa780e8_a05e27fbc2cd74b3d8153a4212f82e9d-sticker.png"
+          loading="lazy"
+          alt=""
+          class="logo"
+      /></a>
+    </div>
+    <div class="navigation-middle">
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="/portfolio/aashutosh.html" class="nav-link w-nav-link">Home</a
+        ><a href="/portfolio/aashutosh.html#projects" class="nav-link w-nav-link">Projects</a
+        ><a href="/portfolio/resume.html" target="_blank" class="nav-link w-nav-link"
+          >About Me</a
+        ><a href="/portfolio/aashutosh.html#contact" class="nav-link w-nav-link">Contact</a>
+      </nav>
+    </div>
+    <div class="navigation-right">
+      <div class="social-links-container">
+        <a
+          href="mailto:agrawal.aash@northeastern.edu?subject=Aashutosh%2C%20I%20just%20saw%20your%20website!%20"
+          class="social-link-wrap w-inline-block"
+          ><img
+            src="https://cdn.prod.website-files.com/6075e869c1ce85d8a18a162a/6080a0773eddbafeb83a3039_telegram.png"
+            loading="lazy"
+            alt=""
+            class="dribble-icon" /></a
+        ><a href="tel:+18572304392" class="social-link-wrap w-inline-block"
+          ><img
+            src="https://cdn.prod.website-files.com/6075e869c1ce85d8a18a162a/6080a0bff61882f98551ad38_viber.png"
+            loading="lazy"
+            width="18"
+            alt=""
+            class="twitter-icon" /></a
+        ><a
+          href="https://www.linkedin.com/in/aashutosh-agrawal/"
+          target="_blank"
+          class="social-link-wrap w-inline-block"
+          ><img
+            src="https://cdn.prod.website-files.com/6075e869c1ce85d8a18a162a/6080a057a23a8b3e97da5f04_linkedin%20(1).png"
+            loading="lazy"
+            alt=""
+            class="instagram-icon"
+        /></a>
+      </div>
+      <div
+        class="menu-button w-nav-button"
+        style="-webkit-user-select: text"
+        aria-label="menu"
+        role="button"
+        tabindex="0"
+        aria-controls="w-nav-overlay-0"
+        aria-haspopup="menu"
+        aria-expanded="false"
+      >
+        <div class="w-icon-nav-menu"></div>
       </div>
     </div>
-  </nav>
-
-  <section class="skills-section">
-    <h2 class="text-center mb-4">My Skills</h2>
-    <div class="skills-container">
-      <!-- Skill 1 -->
-      <div class="skill">
-        <div class="circle">
-          <span>90%</span> <!-- Example percentage -->
-        </div>
-        <p class="text-center">JavaScript</p>
-      </div>
-  
-      <!-- Skill 2 -->
-      <div class="skill">
-        <div class="circle">
-          <span>85%</span>
-        </div>
-        <p class="text-center">React</p>
-      </div>
-  
-      <!-- Skill 3 -->
-      <div class="skill">
-        <div class="circle">
-          <span>80%</span>
-        </div>
-        <p class="text-center">CSS</p>
-      </div>
-  
-      <!-- Skill 4 -->
-      <div class="skill">
-        <div class="circle">
-          <span>70%</span>
-        </div>
-        <p class="text-center">Node.js</p>
-      </div>
-  
-      <!-- Skill 5 -->
-      <div class="skill">
-        <div class="circle">
-          <span>75%</span>
-        </div>
-        <p class="text-center">Python</p>
-      </div>
-    </div>
-  </section>
+  </div>
+  <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+  </div>
 
   
   <!-- Slide Section -->
