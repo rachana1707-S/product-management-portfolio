@@ -117,6 +117,28 @@ body {
     color: #888;
   }
 
+  /* Custom Styles for Carousel Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Inverts the color to black */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: black !important; /* Ensures the buttons themselves are black */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  background-color: black; /* Ensures background is black if icons fail */
+}
+
+.btn-primary {
+  background-color: #6A0DAD !important; /* Button background to black */
+  border-color: #6A0DAD !important; /* Button border to black */
+  color: #fff !important; /* Text color to white */
+}
+
   body {
     font-family: 'Arial', sans-serif;
     background-color: #fff;
@@ -159,4 +181,52 @@ body {
     color: #fff;
   }
 
+  
+  .testimonial-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #E6FAF1;
+  }
+  
+  .testimonial-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .testimonial.active {
+    display: block;
+  }
+  
+  .testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .testimonial h4 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
