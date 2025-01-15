@@ -181,42 +181,80 @@ body {
     color: #fff;
   }
 
-  
   .testimonial-section {
     text-align: center;
-    padding: 2em;
+    padding: 3em 2em; /* Increased padding for a more spacious layout */
     background-color: #E6FAF1;
+  }
+  
+  .testimonial-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #020202; /* A complementary green shade for the header */
+  }
+  
+  .testimonial-section p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: #444; /* A softer gray for secondary text */
   }
   
   .testimonial-container {
     position: relative;
-    width: 60%;
+    width: 70%; /* Slightly wider for a better layout */
     margin: auto;
     overflow: hidden;
     background: #fff;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2.5em 2em;
+    border-radius: 12px; /* More rounded edges */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
   }
   
   .testimonial {
     display: none;
     animation: fadeIn 1s ease-in-out;
+    position: relative;
+    padding: 4em 1em 1em 1em; /* Increased top padding to fit the image */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
   
   .testimonial.active {
     display: block;
   }
   
+  .testimonial-img {
+    width: 80px; /* Size of the circular image */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -40px; /* Places the image slightly above the top of the card */
+    left: 50%; /* Aligns the image horizontally to the center */
+    transform: translateX(-50%); /* Centers the image precisely */
+    border: 3px solid #E6FAF1; /* Matches the background for a seamless look */
+    background-color: #fff; /* Ensures image background blends */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth to the image */
+  }
+  
+  
+  
   .testimonial p {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
+    font-size: 1.3em; /* Slightly larger for readability */
+    margin-top: 50px; /* Space to avoid overlap with the image */
+    margin-bottom: 1em;
+    color: #333; /* Darker text for contrast */
+    line-height: 1.6;
   }
   
   .testimonial h4 {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
-    color: #555;
+    color: #2C7A7B; /* Matches the header for a cohesive color scheme */
+    margin-top: 0.5em;
   }
   
   @keyframes fadeIn {
